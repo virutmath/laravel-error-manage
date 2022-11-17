@@ -1,0 +1,19 @@
+{
+    "name": "virutmath/laravel-error-manage",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Virutmath\\LaravelErrorManage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "virutmath",
+            "email": "virutmath@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/http": "^9.40"
+    }
+}
