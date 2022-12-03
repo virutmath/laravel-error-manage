@@ -27,7 +27,14 @@ class ErrorManage
         return new Response($this->formatError($err), $err['status']);
     }
 
-    protected function formatError($err) {
+    public function getInternalMessage($errID) {
+        if(isset($this->messages[$errID])) {
+            return $this->messages[$errID]['internal_message'];
+        }
+    }
+
+    protected function formatError($err): array
+    {
         return [
             'error' => [
                 'code' => $err['code'],
