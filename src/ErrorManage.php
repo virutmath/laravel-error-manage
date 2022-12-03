@@ -32,6 +32,8 @@ class ErrorManage
             'error' => [
                 'code' => $err['code'],
                 'message' => $err['message_detail'],
+                'type' => $err['type'],
+                'status' => $err['status']
             ]
         ];
     }
